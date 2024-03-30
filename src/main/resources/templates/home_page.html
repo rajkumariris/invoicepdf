@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Example</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+
+</head>
+<body>
+<table class="box">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>age</th>
+        <th>email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user:${users}">
+        <td th:text="${user.buyer}"></td>
+        <td th:text="${user.sellerGstin}"></td>
+        <td th:text="${user.buyer}"></td>
+        <td th:text="${user.sellerAddress}"></td>
+        <td th:text="${user.buyerGstin}"></td>
+        <td th:text="${user.items[0].name}"></td>
+        <td th:text="${user.items[0].quantity}"></td>
+        <td th:text="${user.items[0].amount}"></td>
+        <td th:text="${user.items[0].rate}"></td>
+<!--        private String Seller;-->
+<!--        private String sellerGstin;-->
+
+<!--        private String sellerAddress;-->
+
+<!--        private String buyer;-->
+
+<!--        private String buyerGstin;-->
+<!--        private String buyerAddress;-->
+
+<!--        private List<Item> items;-->
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
