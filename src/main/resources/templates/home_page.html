@@ -24,49 +24,13 @@
 <body>
 <table  class="invoice-table"  th:each="user:${users}"  >
 
-<!--            <tr >-->
-<!--                <td class="box">-->
-<!--                <table class="sub-table">-->
-<!--                    <tr>-->
-<!--                        <td  th:text="${user.buyer}" class="box"></td>-->
-<!--                        <td th:text="${user.sellerGstin}" class="box">Box 2</td>-->
-<!--                    </tr>-->
-<!--                </table>-->
-<!--                </td>-->
-<!--            </tr>-->
-
-<!--            <tr>-->
-<!--                <td colspan="4" class="box-container">-->
-<!--                    <div  class="box">Box 3</div>-->
-<!--                    <div  th:text="${user.sellerAddress}" class="box">Box 4</div>-->
-<!--                    <div th:text="${user.buyerGstin}" class="box">Box 5</div>-->
-<!--                    <div th:text="${user.items[0].name}" class="box">Box 6</div>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td colspan="4" class="box-container">-->
-<!--                    <div th:text="${user.items[0].quantity}" class="box">Box 7</div>-->
-<!--                    <div  th:text="${user.items[0].amount}" class="box">Box 8</div>-->
-<!--                    <div th:text="${user.items[0].rate}" class="box">Box 9</div>-->
-<!--                    <div class="box">Box 10</div>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td colspan="4" class="box-container">-->
-<!--                    <div class="box">Box 11</div>-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--</table>-->
-<!--<div>-->
 
 
         <thead>
         <tr>
             <th colspan="2">Item</th>
             <th  colspan="2">Description</th>
-            <!-- <th>Quantity</th>
-            <th>Rate</th>
-            <th>Amount</th> -->
+
         </tr>
         </thead>
         <tbody>
